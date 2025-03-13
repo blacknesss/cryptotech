@@ -1,8 +1,44 @@
-.main{
+.main {
     padding-top: 100px;
 
-    & table{
+    & table {
         width: 100%;
         text-align: center;
+        border-collapse: collapse;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        
+        & thead {
+            
+            & th {
+                padding: 15px;
+                font-weight: 600;
+                border-bottom: 2px solid #dee2e6;
+            }
+        }
+
+        & tbody {
+            cursor: pointer;
+
+            & tr {
+                transition: background-color 0.2s ease;
+
+                &:hover {
+                    background-color: #f8f9fa;
+                }
+
+                & td {
+                    padding: 12px 15px;
+                    border-bottom: 1px solid #dee2e6;
+                }
+            }
+        }
+    }
+
+    .positive {
+        color: #28a745;
+    }
+
+    .negative {
+        color: #dc3545;
     }
 }

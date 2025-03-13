@@ -5,20 +5,17 @@ export interface MarketAsset {
 }
 
 export interface MainData {
-  symbol: string;
-  count?: number;
-  price: number;
-  sumPrice?: number;
-  change24h: number;
-  percent?: number;
+    symbol: string;
+    count?: number;
+    price: number;
+    sumPrice?: number;
+    change24h: number;
+    percent?: number;
+    quantity: number;
+    total: number;
 }
 
 export interface MarketDataState {
-  assets: MarketAsset[];
-  mainData: MainData[];
-}
-  
-export interface PortfolioAsset extends MarketAsset {
-    quantity: number;
-    total: number;
+    assets: MarketAsset[];
+    mainData: MainData[];
 }
