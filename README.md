@@ -21,4 +21,4 @@ Scss;\
 
 ## `Развернут на Vercel:`
 
-[Cryptotech]('')
+[Cryptotech](https://cryptotech-sooty.vercel.app)
